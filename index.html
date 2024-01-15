@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Todo-App</title>
+  </head>
+  <body class="bg-slate-400">
+    <h1 class="text-center text-4xl font-semibold pt-10">Todo App</h1>
+    <div
+      class="grid grid-cols-2 justify-center text-center border-solid border-black border-2 p-10 m-10 rounded-md"
+      id="todo-container"
+    >
+      <label class="" for="input"></label>
+      <input
+        placeholder="Input todo item"
+        id="todo-input"
+        type="text"
+        name="input"
+        class="border-2 border-black m-10 col-start-1 text-center"
+      />
+      <button
+        class="border-solid border-2 w-fit h-fit col-start-2 place-self-center p-2 rounded-md bg-slate-600"
+        type="submit"
+        id="add-button"
+      >
+        Add Todo
+      </button>
+      <ul class="" id="todo-list"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
